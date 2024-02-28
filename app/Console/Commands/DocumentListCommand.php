@@ -9,7 +9,7 @@ use Illuminate\Console\Command;
 class DocumentListCommand extends Command
 {
 
-   protected $signature = 'document_list {documentType} {partnerId} {minPrice}';
+    protected $signature = 'document_list {documentType} {partnerId} {minPrice}';
     protected $description = 'Displays a list of documents based on provided arguments';
 
     /**
@@ -28,7 +28,7 @@ class DocumentListCommand extends Command
         }
 
         $this->line(
-            (new DocumentList($documentType,$partnerId, $minPrice))
+            (new DocumentList($documentType, $partnerId, $minPrice))
                 ->fromTestFile()
                 ->get(true)
         );
