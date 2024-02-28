@@ -7,8 +7,8 @@ use Exception;
 class DocumentumTypeException extends Exception
 {
 
-    public function __construct()
+    public function __construct($message)
     {
-        parent::__construct(__('error.document_type'));
+        parent::__construct($message);
     }
 }

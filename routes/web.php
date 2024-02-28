@@ -1,5 +1,7 @@
 <?php
 
+use App\Livewire\DocumentList;
+use App\Services\DocumentListReader;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('components.document_list');
-});
+Route::get('/', DocumentList::class);
