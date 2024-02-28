@@ -14,9 +14,9 @@
 </head>
 <body>
 
-{{ $slot }}
+    {{ $slot }}
 
-@livewireScripts
+    @livewireScripts
 
 </body>
 </html>
